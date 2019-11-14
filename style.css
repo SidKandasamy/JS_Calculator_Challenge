@@ -26,3 +26,22 @@ body{
     height: 150px;
     width: 320px;
 }
+
+#calculation{
+    width:320px;
+    height:450px;
+}
+
+#history{
+    text-align:right;
+    margin-right:10px;
+    font-size: 15px;
+    margin-top: 5px;
+    padding-top: 5px;
+    color:#919191;
+}
+
+#output{
+    text-align:right;
+    margin-right: 10px;
+}
