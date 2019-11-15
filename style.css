@@ -57,7 +57,17 @@ body{
     font-size: 20px;
 }
 
+.operator, .number{
+    cursor:pointer;
+}
+
+.operator:active, .number:active{
+    font-size:13px;
+
+}
+/* using psudo class operator "acive" to enhance buttons when clicked" */
+
 .number{
     background-color:lightgrey;
-    box-shadow:20px;
+    border-width:0px;
 }
