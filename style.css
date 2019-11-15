@@ -63,6 +63,7 @@ body{
 
 .operator:active, .number:active{
     font-size:13px;
+    border-radius:0%;
 
 }
 /* using psudo class operator "acive" to enhance buttons when clicked" */
@@ -70,4 +71,9 @@ body{
 .number{
     background-color:lightgrey;
     border-width:0px;
+}
+
+.operator{
+    font-size:13px;
+    background-color: #FEC8D8;
 }
