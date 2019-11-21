@@ -18,3 +18,17 @@ function getOutput(num){
     document.getElementById("output-value").innerText=num;
 }
 
+// operators
+
+let operator = document.getElementsByClassName("operator")
+
+for (let i = 0; i < operator.length; i++) {
+    
+    operator[i].addEventListener('click',function(){
+        // alert("this works"+this.id);
+        
+    })
+    
+}
+
+//use for loop to access each operator one by one
