@@ -12,7 +12,7 @@ function printOutput(num){
     document.getElementById("output-value").innerText=num; //gets the output value
 }
 
-printOutput("100")
+
 
 function getOutput(num){
     document.getElementById("output-value").innerText=num;
