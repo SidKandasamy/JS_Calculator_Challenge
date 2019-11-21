@@ -26,9 +26,24 @@ for (let i = 0; i < operator.length; i++) {
     
     operator[i].addEventListener('click',function(){
         // alert("this works"+this.id);
-        
+
     })
     
 }
 
-//use for loop to access each operator one by one
+//use for loop to access each operator one by one and add click function
+
+//numbers
+
+let numbers = document.getElementsByClassName("number")
+
+for (let i = 0; i < numbers.length; i++) {
+    
+    numbers[i].addEventListener('click',function(){
+        // alert("this works"+this.id);
+
+    })
+    
+}
+
+//use for loop to access each numbers one by one and add click function
