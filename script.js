@@ -27,6 +27,11 @@ for (let i = 0; i < operator.length; i++) {
     operator[i].addEventListener('click',function(){
         // alert("this works"+this.id);
 
+        if(this.id=="C"){
+            printHistory("");
+            printOutput("");
+        }
+
     })
     
 }
