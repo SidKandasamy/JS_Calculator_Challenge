@@ -46,10 +46,15 @@ for (let i = 0; i < numbers.length; i++) {
     
     numbers[i].addEventListener('click',function(){
         // alert("this works"+this.id);
-        let output = this.id;
-        printOutput(output);
+        
+        if (getOutput!=NaN){
+            getOutput = getOutput+this.id;
+            
+            printOutput(getOutput);
+        }
+      
 
-    })
+    });
     
 }
 
