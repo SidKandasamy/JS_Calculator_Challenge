@@ -9,8 +9,16 @@ function printHistory(num){
 // outputs 
 
 function printOutput(num){
-    document.getElementById("output-value").innerText=num; //gets the output value
+  
+    if(num==""){
+		document.getElementById("output-value").innerText=num;//gets the output value
+	}
+	else{
+		document.getElementById("output-value").innerText=getFormattedNumber(num);
+	}	
 }
+
+
 
 
 
@@ -47,11 +55,7 @@ for (let i = 0; i < numbers.length; i++) {
     numbers[i].addEventListener('click',function(){
         // alert("this works"+this.id);
         
-        if (getOutput!=NaN){
-            getOutput = getOutput+this.id;
-            
-            printOutput(getOutput);
-        }
+    
       
 
     });
