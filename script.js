@@ -10,16 +10,24 @@ function printHistory(num){
 
 function printOutput(num){
   
-    if(num==""){
+    if(num==""){ //if valiue is empty set the output ot empty
 		document.getElementById("output-value").innerText=num;//gets the output value
 	}
-	else{
+	else{ //or else convert it to formatted number
 		document.getElementById("output-value").innerText=getFormattedNumber(num);
 	}	
 }
 
+function getFormattedNumber(num){ //this function reads the value and formats the number output
+	if(num=="-"){
+		return "";
+	}
+	var n = Number(num);
+	var value = n.toLocaleString("en");
+	return value;
+}
 
-
+printOutput("9999")
 
 
 function getOutput(num){
