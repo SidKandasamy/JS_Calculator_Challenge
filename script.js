@@ -27,7 +27,6 @@ function getFormattedNumber(num){ //this function reads the value and formats th
 	return value;
 }
 
-printOutput("9999")
 
 
 function getOutput(num){
