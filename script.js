@@ -30,7 +30,9 @@ function getFormattedNumber(num){ //this function reads the value and formats th
 }
 
 
-
+function reverseNumberFormat(num){
+	return Number(num.replace(/,/g,''));
+}
 
 
 function getOutput(num){
