@@ -18,6 +18,8 @@ function printOutput(num){
 	}	
 }
 
+printOutput("9999");
+
 function getFormattedNumber(num){ //this function reads the value and formats the number output
 	if(num=="-"){
 		return "";
@@ -26,6 +28,8 @@ function getFormattedNumber(num){ //this function reads the value and formats th
 	var value = n.toLocaleString("en");
 	return value;
 }
+
+
 
 
 
