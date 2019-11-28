@@ -44,19 +44,26 @@ for (let i = 0; i < operator.length; i++) {
         else{
 			var output=getOutput();
 			var history=getHistory();
-			if(output==""&&history!=""){
+			if(output==""&&history!=""){ 
 				if(isNaN(history[history.length-1])){
 					history= history.substr(0,history.length-1);
 				}
 			}
-
+			if(output!="" || history!=""){ //first check if output is not empty before proceeding
+				output= output==""?output:reverseNumberFormat(output);
+				history=history+output; //when operator is clicked this adds it to the history value
+				if(this.id=="="){ //if user clicks on the  = sign then history is evaluated (history is where the calculation occurs so  +,-,*,=)
+					var result=eval(history);
+					printOutput(result); // result to printed to Output
+					printHistory(""); //history is then empty
+				}
 				else{
-					history=history+this.id;
-					printHistory(history);
-					printOutput("");
+					history=history+this.id; // this is for the other operators, it uses the ID to do the calculations
+					printHistory(history); //result is printed into Output
+					printOutput(""); //history is then empty
 				}
 			}
-		
+		}
 
     })
     
