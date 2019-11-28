@@ -8,6 +8,12 @@ function printHistory(num){
 
 // outputs 
 
+function getOutput(num){
+    document.getElementById("output-value").innerText=num;
+}
+
+
+
 function printOutput(num){
   
     if(num==""){ //if valiue is empty set the output ot empty
@@ -30,14 +36,12 @@ function getFormattedNumber(num){ //this function reads the value and formats th
 }
 
 
+
+
 function reverseNumberFormat(num){
 	return Number(num.replace(/,/g,''));
 }
 
-
-function getOutput(num){
-    document.getElementById("output-value").innerText=num;
-}
 
 // operators
 
@@ -67,7 +71,13 @@ for (let i = 0; i < numbers.length; i++) {
     
     numbers[i].addEventListener('click',function(){
         // alert("this works"+this.id);
+        //get output without commers removed
+        var output = reverseNumberFormat(getOutput());
         
+        if (output!=Nan){ //if output is a number
+            output=output+this.id;
+            printOutput(output);
+        }
     
       
 
